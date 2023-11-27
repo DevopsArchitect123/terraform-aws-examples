@@ -1,11 +1,11 @@
 # Configure the AWS provider
 provider "aws" {
-  region = "eu-west-1"
+  region = "eu-east-1"
 }
 
 # Create a Security Group for an EC2 instance
 resource "aws_security_group" "instance" {
-  name = "terraform-example-instance"
+  name = "RestoSGEC2"
   
   ingress {
     from_port	  = 8080
